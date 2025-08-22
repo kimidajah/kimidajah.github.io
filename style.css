@@ -1,0 +1,117 @@
+/* Custom Styles */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar styles */
+nav {
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Hero section */
+#home {
+    background: linear-gradient(rgba(21, 101, 192, 0.9), rgba(21, 101, 192, 0.9)), 
+                url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+    padding: 120px 0;
+    color: white;
+}
+
+/* Section padding */
+.section {
+    padding: 80px 0;
+}
+
+/* Card hover effect */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card .card-content {
+    flex-grow: 1;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Service icons */
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #1565c0;
+}
+
+/* Form styles */
+.btn {
+    background-color: #1565c0;
+}
+
+.btn:hover {
+    background-color: #0d47a1;
+}
+
+/* Footer styles */
+.footer-copyright {
+    padding: 20px 0;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 600px) {
+    .section {
+        padding: 40px 0;
+    }
+    
+    #home {
+        padding: 80px 0;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Back to top button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    display: none;
+}
+
+/* Portfolio image hover effect */
+.card .card-image img {
+    transition: transform 0.3s ease;
+}
+
+.card .card-image:hover img {
+    transform: scale(1.05);
+}
+
+/* Contact form validation */
+.input-field input[type=text].valid,
+.input-field input[type=email].valid,
+.input-field textarea.materialize-textarea.valid {
+    border-bottom: 1px solid #4caf50;
+    box-shadow: 0 1px 0 0 #4caf50;
+}
+
+.input-field input[type=text].invalid,
+.input-field input[type=email].invalid,
+.input-field textarea.materialize-textarea.invalid {
+    border-bottom: 1px solid #f44336;
+    box-shadow: 0 1px 0 0 #f44336;
+}
